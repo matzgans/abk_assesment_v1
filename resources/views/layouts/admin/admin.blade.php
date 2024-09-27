@@ -40,8 +40,10 @@
         </main>
     </div>
 
+    @stack('before-scripts')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    @stack('scripts')
+    @stack('after-scripts')
 </body>
 
 </html>

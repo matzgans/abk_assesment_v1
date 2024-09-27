@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name_school')->unique();
             $table->text('headmaster');
-            $table->string('email_school');
+            $table->string('email_school')->unique();
+            $table->text('address');
             $table->timestamps();
         });
     }
